@@ -17,23 +17,26 @@ le_education_loaded = data['le_education']
 
 def show_predict_page():
     st.title("Software Developer Salary Prediction Using Machine Learning")
-    st.write("""###### - Data Source: https://insights.stackoverflow.com/survey/2020 ######""")
 
     countries = (
-        "United States",
+        "USA",
         "India",
-        "United Kingdom",
+        "UK",
         "Germany",
         "Canada",
-        "Brazi",
+        "Brazil",
         "France",
         "Spain",
         "Australia",
         "Netherlands",
         "Poland",
         "Italy",
-        "Russian Federation",
+        "Russia",
         "Sweden",
+        "Turkey",
+        "Israel",
+        "Norway",
+        "Switzerland",
     )
 
     education_levels =(
@@ -56,3 +59,10 @@ def show_predict_page():
         predicted_salary = regressor.predict(X)
         st.success("Predicted Salary Per Annum: US$ {:.2f}".format(predicted_salary[0]))
         st.success("Predicted Salary Per Annum: KSh {:.2f}".format(convert(predicted_salary[0])))
+
+    st.write("""###### - Data Source: https://insights.stackoverflow.com/survey/2021 ######""")
+    st.write("""###### - Machine Learning Module- Scikit-Learn ######""")
+    st.write("""###### - Preprocessing - LabelEncoding  ######""")
+    st.write("""###### - Predictive Analysis Method - Regression  ######""")
+    st.write("""###### - Algorithms - LinearRegression, DecisionTreeRegressor, RandomForestRegressor, GridSearchCV ######""")
+    st.write("""###### - App and Presentation - Streamlit ######""")
