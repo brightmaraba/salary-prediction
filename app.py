@@ -2,7 +2,7 @@ import streamlit as st
 from predict_page import show_predict_page
 from explore_page import show_explore_page
 
-page = st.sidebar.selectbox("Explore or Predict the Data", ("Predict", "Explore"))
+page = st.sidebar.selectbox("Select To Predict or Explore the Data", ("Predict", "Explore"))
 st.sidebar.image("Motivation.png", use_column_width=True)
 
 

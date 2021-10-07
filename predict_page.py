@@ -1,4 +1,3 @@
-from sklearn import model_selection
 import streamlit as st
 import pickle
 import numpy as np
