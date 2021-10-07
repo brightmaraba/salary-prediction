@@ -65,3 +65,5 @@ def show_predict_page():
     st.write("""###### - Predictive Analysis Method - Regression  ######""")
     st.write("""###### - Algorithms - LinearRegression, DecisionTreeRegressor, RandomForestRegressor, GridSearchCV ######""")
     st.write("""###### - App and Presentation - Streamlit ######""")
+    st.write("""###### - @LibranTechie on Twitter ######""")
+    st.write("""###### - https://www.facebook.com/TheKoech ######""")
